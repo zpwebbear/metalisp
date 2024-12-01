@@ -1,0 +1,52 @@
+{
+  "name": "metalisp",
+  "version": "0.0.0",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "license": "MIT",
+  "description": "Metarhia utilities",
+  "keywords": [
+    "node.js",
+    "metarhia",
+    "util"
+  ],
+  "main": "metalisp.js",
+  "browser": {
+    "./metalisp.js": "./dist.js"
+  },
+  "types": "metalisp.d.ts",
+  "files": [
+    "lib/",
+    "dist.js",
+    "metalisp.d.ts"
+  ],
+  "engines": {
+    "node": "18 || 20 || 21 || 22 || 23"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metarhia/metalisp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metarhia/metalisp/issues",
+    "email": "timur.shemsedinov@gmail.com"
+  },
+  "homepage": "https://metarhia.com",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/tshemsedinov"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run types && node --test",
+    "types": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier --check \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "eslint-config-metarhia": "^9.1.1",
+    "metatests": "^0.9.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2"
+  }
+}
