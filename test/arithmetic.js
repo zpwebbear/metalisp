@@ -5,7 +5,7 @@ const { evaluate } = require('..');
 
 describe('Arithmetic operators', () => {
   describe('Addition', () => {
-    it.only('Evaluate addition', () => {
+    it('Evaluate addition', () => {
       const program = '(+ x y)';
       const context = { x: 1, y: 2 };
       const result = evaluate(program, context);
