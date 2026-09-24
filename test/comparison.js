@@ -1,5 +1,6 @@
 /* eslint-disable no-self-compare, no-constant-binary-expression */
 'use strict';
+
 const assert = require('node:assert');
 const { describe, it } = require('node:test');
 const { evaluate } = require('..');
